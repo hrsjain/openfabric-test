@@ -1,0 +1,13 @@
+# ===============================
+# = Spring configurations
+# ===============================
+spring:
+  name: local
+  # = HTTP requests configurations ##############################
+  servlet:
+    multipart:
+      location: /tmp
+  datasource:
+    url:      jdbc:postgresql://127.0.0.1:5432/test #${env.SPRING_DATASOURCE_URL}
+    username: postgres #${env.SPRING_DATASOURCE_USERNAME}
+    password: hrsjain #${env.SPRING_DATASOURCE_PASSWORD}

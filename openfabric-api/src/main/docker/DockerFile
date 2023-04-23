@@ -1,0 +1,11 @@
+FROM java:8
+ADD build/libs/*.jar dockerapp.jar
+EXPOSE 8080
+ENTRYPOINT {"java", "-jar", "dockerapp.jar"}
+
+
+
+#COPY . /usr/src/myapp
+#WORKDIR /usr/src/myapp
+#RUN javac Main.java
+#CMD ["java", "Main"]
